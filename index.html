@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang = "tr">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+<title>Portfolio</title>
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<!-- baslik kismi -->
+
+<header class="baslik" >
+    <a href ="#" class="logo">Portfolio</a>
+    <i class='bx bx-menu' id="menu-icon"></i>
+    <nav class="navbar">
+        <a href ="#anasayfa" class="active">Home</a>
+        <a href ="#hakkinda" >About</a>
+        <a href ="#servisler" >Services</a>
+        <a href ="#portfolyo" >Portfolio</a>
+        <a href ="#iletisim" >Contact</a>
+    </nav>
+</header>
+
+ <!-- anasayfa section design -->
+
+<section class="anasayfa" id="anasayfa">
+    <div class="anasayfa-icerigi">
+        <h3>Hello, I'm</h3>
+        <h1>Mevlüde Sıla Kazan</h1>
+        <h3>And I'm a <span class="multiple-text"></span> </h3>
+        <p>Welcome to my portfolio! I'm a curious software developer who likes to learn and develop, and I'm taking firm steps towards becoming a full stack developer. </p>
+
+        <div class="sosyal-medya">
+            <a href="https://github.com/MevludeSilaKazan"><i class='bx bxl-github'></i></a>
+            <a href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3B4dN6W5r6Q0%2BE5QLodNHUzw%3D%3D"><i class='bx bxl-linkedin' ></i></a>
+
+        </div>
+        <a href="https://drive.google.com/file/d/1UnPXjQ0JZnSyXPzwehj8zR95wMPG0wF1/view?usp=sharing" class="btn"> Check Out My Resume!</a>
+    </div>
+    
+    <div class="anasayfa-resmi" >
+        <img src="me.png">
+    </div>
+
+</section>
+
+<!--hakkında section design -->
+
+<section class="hakkinda" id="hakkinda">
+    <div class="hakkinda-resmi">
+        <img  src="me.png" >
+
+    </div>
+
+    <div class="hakkinda-icerigi">
+
+        <h2 class="hakkinda-basligi">About <span>Me</span> !</h2>
+       
+        <p>I am a passionate and dedicated software developer with the ability to turn ideas into reality through code. The ever-evolving nature of technology fascinates me and I am committed to continuous learning. Whether exploring new frameworks, attending workshops, or reading cutting-edge blogs, I'm always trying to improve my skills and stay at the cutting edge of the industry. Collaboration is at the heart of my work ethic. I enjoy working in cross-functional teams, brainstorming, and fostering a positive and productive environment. I believe open communication and teamwork are crucial to the success of any project.</p>
+       <!--<a href="#" class="btn" > Daha Fazlası İçin</a>
+    -->  
+    </div>
+
+</section>
+
+<!--services section-->
+
+<section class="servisler" id="servisler">
+    <h2 class="servis-basligi">My <span>Skills</span> </h2>
+    <div class="servisler-bolumu">
+        <div class="servis-kutucuklari">
+            <i class='bx bx-code-alt'></i>
+
+            <h3>Web Development</h3>
+            <p id="p1" class="hide">As a software developer who finds website development interesting and progresses with pleasure, I am developing a full stack website with Django. I can list the reasons for choosing Django as I wanted to learn the MVC pattern, it offers a powerful ORM system that facilitates database operations, it takes precautions to prevent security vulnerabilities, and its documentation is good, that is, it provides my understanding while doing research.</p>
+            <a onclick="toggleParagraph('p1')" class="btn">Show More</a>
+        </div>
+        <div class="servis-kutucuklari">
+            <i class='bx bxs-brain'></i>
+            <h3>AI/ML Project Development</h3>
+            <p id="p2" class="hide">The basic building block of an AI/ML project is data. A large and representative dataset is often needed to achieve good performance. I can collect data, clean up, balance and feature engineering. I think for model selection and try to find and train the most accurate model. I evaluate the performance of the model and try to improve it. I monitor the progress of the project and update and improve the model if necessary.</p>
+            <a onclick="toggleParagraph('p2')" class="btn">Show More</a>
+        </div>
+        <div class="servis-kutucuklari">
+            <i class='bx bxs-data' ></i>
+            <h3>Database Management</h3>
+            <p id="p3" class="hide">I have knowledge of database management systems (DBMS) for SQL and MySQL. I can understand and apply basic database design principles such as database structures, relational model, and normalization. I can write SQL queries, query, insert, update and delete data.</p>
+            <a onclick="toggleParagraph('p3')" class="btn">Show More</a>
+        </div>
+        <div class="servis-kutucuklari">
+            <i class='bx bxs-component'></i>
+            <h3>OOP</h3>
+            <p id="p4" class="hide">I gained experience in defining classes, creating objects and developing object-oriented thinking skills. I know about OOP concepts (Encapsulation, Inheritance, Polymorphism, Abstraction) and can apply them in code. I am still using object oriented programming. I try to help make code more understandable, reusable, and maintainable.</p>
+            <a onclick="toggleParagraph('p4')" class="btn">Show More</a>
+        </div>
+
+        <div class="servis-kutucuklari">
+            <i class='bx bx-shape-polygon' ></i>
+            <h3>Data Structure and Algorithms Implemantation</h3>
+            <p id="p5" class="hide">I am improving my ability to understand different data structures (array, list, stack, queue, tree, graph, etc.) and to effectively store and process data using these structures, as well as my ability to understand different algorithms (sort, search, graph search, complexity analysis, etc.) and apply these algorithms in different scenarios.</p>
+            <a onclick="toggleParagraph('p5')" class="btn">Show More</a>
+        </div>
+        <div class="servis-kutucuklari">
+            <i class='bx bxl-javascript' ></i>
+            <h3>JavaScript</h3> 
+            <p id="p6" class="hide">I'm newbie in JavaScript. So I am trying to learn a lot. </p>
+            <a onclick="toggleParagraph('p6')" class="btn">Show More</a>
+           
+                 </div>
+
+
+
+    </div>
+
+</section>
+
+<!--portfolyo section-->
+
+<section class="portfolyo" id="portfolyo">
+    <h2 class="portfolyo-basligi"> Recent <span>Project</span></h2>
+
+    <div class="portfolyo-bolumu">
+        <div class="portfolyo-kutucuklari">
+            <img src="unsplash.jpg" height="300">
+            <div class="portfolyolar">
+                <h4>My Unsplash</h4>
+                <p>
+                    I first started with Flask to develop websites. In the later stages I entered the world of Django and was impressed by the extent of Django's features. I also try to work with React as a hobby.For example I tried to develop with React a web site from devchallanges.io.
+                </p>
+
+                <a href="https://unplash-challenge.onrender.com/"><i class="bx bx-link-external"></i></a>
+            </div>
+
+        </div>
+        <div class="portfolyo-kutucuklari">
+            <img src="braiin.jpg" height="300">
+            <div class="portfolyolar">
+                <h4>AI Approaches to the Cranium</h4>
+                <p>
+                    We carried out this remarkable project together with neurosurgeons, radiologists and university professors. That's why I wanted to present it in my portfolio.!
+                </p>
+
+                <a href="https://pubmed.ncbi.nlm.nih.gov/35574559/"><i class="bx bx-link-external"></i></a>
+            </div>
+
+        </div>
+        <div class="portfolyo-kutucuklari">
+            <img src="codecafe.jpg" height="300">
+            <div class="portfolyolar">
+                <h4>CodeCafe</h4>
+                <p>
+                    Workroom is a Django-based website, where users can login and register, create rooms, ask questions in these rooms, and follow current events. In addition, they can easily find the content they want thanks to the search feature. Check out my github to see the codes and features for this site!
+                </p>
+
+                <a href="https://github.com/MevludeSilaKazan/CodeCafe"><i class="bx bx-link-external"></i></a>
+            </div>
+
+        </div>
+      <!--  <div class="portfolyo-kutucuklari">
+            <img src="ofis4.jpg" height="300">
+            <div class="portfolyolar">
+                <h4>Data Structure and Algorithms Implemantation</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae reiciendis amet sint et praesentium quaerat? Velit ea, ratione natus temporibus ipsa iusto enim autem explicabo ducimus. Error rerum provident minus!
+                </p>
+
+                <a href="#"><i class="bx bx-link-external"></i></a>
+            </div>
+
+        </div>
+        <div class="portfolyo-kutucuklari">
+            <img src="ofis5.jpg" height="300">
+            <div class="portfolyolar">
+                <h4>Web Geliştirme</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae reiciendis amet sint et praesentium quaerat? Velit ea, ratione natus temporibus ipsa iusto enim autem explicabo ducimus. Error rerum provident minus!
+                </p>
+
+                <a href="#"><i class="bx bx-link-external"></i></a>
+            </div>
+
+        </div>
+        <div class="portfolyo-kutucuklari">
+            <img src="ofis6.jpg" height="300">
+            <div class="portfolyolar">
+                <h4>Web Geliştirme</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae reiciendis amet sint et praesentium quaerat? Velit ea, ratione natus temporibus ipsa iusto enim autem explicabo ducimus. Error rerum provident minus!
+                </p>
+
+                <a href="#"><i class="bx bx-link-external"></i></a>
+            </div>
+
+        </div>-->
+    </div>
+
+</section>
+
+
+<!-- iletişim section -->
+
+<section class="iletisim" id="iletisim">
+    <h2 class="iletisim-basligi"> Contact <span>Me</span>!</h2>
+
+    <form action="#">
+        <div class="text-kutucuklari">
+            <input type="text" placeholder="Name and Surname">
+            <input type="email" placeholder="Mail">
+
+        </div>
+
+        <div class="text-kutucuklari">
+            <input type="number" placeholder="Phone Number">
+            <input type="text" placeholder="Mail Subject">
+
+        </div>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+        <input type="submit" value="Submit" class="btn">
+    </form>
+
+</section>
+
+<!--footer section-->
+
+<footer class="footer" id="footer">
+    <div class="footer-text">
+        <p>Copyright &copy; 2023 by MevludeSilaKazan | All Rights Reserved. </p>
+
+    </div>
+
+    <div class="footer-iconTop">
+        <a href="#anasayfa"><i class="bx bx-up-arrow-alt"></i></a>
+
+    </div>
+
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    function toggleParagraph(paragraphId) {
+        var paragraph = $("#" + paragraphId);
+        var button = $("[onclick='toggleParagraph(\"" + paragraphId + "\")']");
+
+        if (paragraph.hasClass('hidden')) {
+            paragraph.slideDown(300); // Smoothly show the paragraph over 300 milliseconds
+            paragraph.removeClass('hidden').addClass('visible');
+            button.html("Hide Paragraph " + paragraphId.slice(1));
+        } else {
+            paragraph.slideUp(300); // Smoothly hide the paragraph over 300 milliseconds
+            paragraph.removeClass('visible').addClass('hidden');
+            button.html("Show Paragraph " + paragraphId.slice(1));
+        }
+    }
+</script>
+
+
+
+
+
+
+
+<!-- Add the ScrollReveal script -->
+<script src="https://unpkg.com/scrollreveal@4.0.7/dist/scrollreveal.min.js"></script>
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script src ="js/script.js"></script>
+
+</body>
+</html>
